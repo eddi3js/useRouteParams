@@ -1,8 +1,32 @@
 {
   "name": "userouteparams",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
+  "author": "Eddi3Js",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "URLRouteParams",
+    "useRouteParams",
+    "search"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eddi3js/useRouteParams"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/userouteparams.umd.js",
+  "module": "./dist/userouteparams.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/userouteparams.es.js",
+      "require": "./dist/userouteparams.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -16,7 +40,22 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "path": "^0.12.7",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2020": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    }
   }
 }
