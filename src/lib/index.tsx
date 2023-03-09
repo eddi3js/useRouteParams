@@ -1,4 +1,14 @@
-import type { UseRouteParams } from "../types";
+type GetAllReturnValue = {
+  key: string;
+  value: string;
+};
+type GetReturnValue = string | string[] | undefined;
+
+export interface UseRouteParams {
+  get: (param: string) => GetReturnValue;
+  getAll: () => GetAllReturnValue[];
+  raw: URLSearchParams;
+}
 
 export default function useRouteParams(): UseRouteParams {
   const searchParams = new URLSearchParams(
