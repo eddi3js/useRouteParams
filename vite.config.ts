@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/lib/index.tsx"),
-      name: "React Tokenproof",
+      name: "useRouteParams",
       fileName: (format) => `useRouteParams.${format}.js`,
     },
     rollupOptions: {
