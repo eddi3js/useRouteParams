@@ -1,1 +1,1 @@
-declare module userouteparams;
+declare module "userouteparams";
