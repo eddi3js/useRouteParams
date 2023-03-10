@@ -1,12 +1,11 @@
-type GetAllReturnValue = {
-  key: string;
-  value: string;
+export type RouteParams = {
+  [key: string]: string | undefined;
 };
 type GetReturnValue = string | string[] | undefined;
 
 export interface UseRouteParams {
   get: (param: string) => GetReturnValue;
-  getAll: () => GetAllReturnValue[];
+  getAll: () => RouteParams[];
   raw: URLSearchParams;
 }
 

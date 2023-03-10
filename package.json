@@ -1,7 +1,7 @@
 {
   "name": "userouteparams",
   "private": false,
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "author": "Eddi3Js",
   "license": "MIT",
@@ -19,8 +19,8 @@
     "dist",
     "README.md"
   ],
-  "main": "./src/lib/index.tsx",
-  "types": "./src/lib/index.d.ts",
+  "main": "./dist/index.tsx",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/userouteparams.es.js",
@@ -34,7 +34,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-dts": "^2.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
